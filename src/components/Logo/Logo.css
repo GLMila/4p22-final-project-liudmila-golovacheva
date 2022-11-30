@@ -1,0 +1,14 @@
+.logo {
+  display: inline-flex;
+  column-gap: 5px;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.logo-start {
+  color: var(--c-accent);
+}
+
+.logo-end {
+  color: var(--c-dark);
+}

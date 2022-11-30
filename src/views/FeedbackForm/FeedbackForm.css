@@ -1,0 +1,18 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  background-color: var(--c-light);
+  padding: 30px 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-radius: var(--border-radius);
+}
+
+.feedback__button {
+  width: 100%;
+}  
+
+.feedback__button:hover {
+  background-color: var(--c-accent);
+}

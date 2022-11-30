@@ -1,0 +1,40 @@
+.catalog-body__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 38px 17px;
+}
+
+.catalog-body__empty-message {
+  width: 100%;
+  min-width: 1251px;
+}
+
+@media (max-width: 1290px) {
+  .catalog-body__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .catalog-body__empty-message {
+    min-width: 934px;
+  }
+}
+
+@media (max-width: 973px) {
+  .catalog-body__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .catalog-body__empty-message {
+    min-width: 617px;
+  }
+}
+
+@media (max-width: 656px) {
+  .catalog-body__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catalog-body__empty-message {
+    min-width: 300px;
+  }
+}
+

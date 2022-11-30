@@ -1,0 +1,16 @@
+.counter {
+  display: inline-flex;
+  align-items: center;
+  width: 71px;
+  height: 31px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--c-accent);
+  font-size: 16px;
+}
+
+.counter__button {
+  color: var(--c-accent);
+  background-color: var(--c-light);
+  height: 20px;
+  line-height: 1;
+}

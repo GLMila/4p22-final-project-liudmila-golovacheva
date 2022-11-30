@@ -1,0 +1,36 @@
+.radios {
+  font-size: var(--additional-font-size);
+  color: var(--c-grey-2);
+}
+
+.radios__radio {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.35em;
+}
+
+.radios__radio-label {
+  margin-top: -0.3em;
+  line-height: 1,5;
+}
+
+.radios__control:checked ~ .radio__emulator::after {
+  opacity: 1;
+}
+
+.radio__emulator {
+  --size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid var(--c-grey-3);
+  border-radius: var(--border-radius);
+}
+
+.radio__emulator::after {
+  content: "✓";
+  color: var(--c-dark);
+  opacity: 0;
+}

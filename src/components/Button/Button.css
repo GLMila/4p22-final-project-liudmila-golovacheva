@@ -1,0 +1,11 @@
+Button {
+  border: 0;
+  outline: none;
+  font-size: var(--additional-font-size);
+  cursor: pointer;
+  width: 163px;
+  height: 40px;
+  border-radius: var(--border-radius);
+  align-items: center;
+  justify-content: center;
+}

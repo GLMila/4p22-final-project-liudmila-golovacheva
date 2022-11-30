@@ -1,0 +1,7 @@
+.catalog {
+  margin: 39px 20px;
+}
+
+.catalog__filter:not(:last-child) {
+  margin-bottom: 39px;
+}

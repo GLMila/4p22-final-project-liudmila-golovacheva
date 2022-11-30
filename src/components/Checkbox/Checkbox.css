@@ -1,0 +1,36 @@
+.checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.35em;
+}
+
+.checkbox__control:checked ~ .checkbox__emulator::after {
+  opacity: 1;
+}
+
+.checkbox__emulator {
+  --size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid var(--c-grey-3);
+  border-radius: var(--border-radius);
+}
+
+.checkbox__emulator::after {
+  content: "✓";
+  opacity: 0;
+}
+
+.checkbox__label {
+  margin-top: -0.03em;
+  line-height: 1;
+  color: var(--c-grey-2);
+  font-size: var(--additional-font-size);
+}
+
+.checkbox .error {
+  flex-basis: 100%;
+}
