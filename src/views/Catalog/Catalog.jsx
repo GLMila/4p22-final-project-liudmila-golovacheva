@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CatalogBody from '../../components/CatalogBody/CatalogBody'
 import CatalogFilter from '../../components/CatalogFilter/CatalogFilter'
+import image from '../../components/Image/image.png'
 import './Catalog.css'
 
 export const defaultCategory = 'All'
@@ -25,7 +26,7 @@ const Catalog = () => {
       .then((response) => {
         const newProducts = response.flowerlist.map((product) => ({
           ...product,
-          imgSrc: 'https://placekitten.com/250/230'
+          imgSrc: [image]
         }))
         const newCategories = getCategoriesFromProducts(newProducts)
 

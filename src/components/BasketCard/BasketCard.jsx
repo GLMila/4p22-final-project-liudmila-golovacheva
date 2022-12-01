@@ -1,12 +1,12 @@
 import React, { useContext } from 'react'
 import Counter from '../Counter/Counter'
 import AppContext from '../../context'
+import image from '../Image/image.png'
 import './BasketCard.css'
 
 const BasketCard = (props) => {
   const {
     id,
-    imgSrc,
     title,
     category,
     price,
@@ -25,7 +25,7 @@ const BasketCard = (props) => {
     <article className="basket-card">
       <img
         className="basket-card__image"
-        src="https://placekitten.com/146/146"
+        src={image}
         alt={title}
         width="146"
         height="146"

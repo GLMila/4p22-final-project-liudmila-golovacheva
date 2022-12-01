@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import Button from '../../components/Button/Button'
 import AppContext from '../../context'
 import Counter from '../../components/Counter/Counter';
+import image from '../../components/Image/image.png'
 import './Product.css'
 
 const Product = (props) => {
@@ -10,7 +11,6 @@ const Product = (props) => {
     title,
     description,
     price = 0,
-    imgSrc,
   } = props
 
   const { 
@@ -31,7 +31,7 @@ const Product = (props) => {
     <div className="product">
       <img 
         className="product__image"
-        src={imgSrc}
+        src={image}
         alt={title}
         width="356"
         height="326"
